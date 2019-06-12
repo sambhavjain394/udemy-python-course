@@ -33,5 +33,5 @@ def master_yoda(text):
     
  # Almost There problem
  
- def almost_there(n):
+def almost_there(n):
     return (abs(100-n)<=10 or abs(200-n)<=10)
