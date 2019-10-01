@@ -30,3 +30,4 @@ def count_primes(num):
         if visited[i]==True:
             count+=1
     return count
+# End your file in a good manner !
