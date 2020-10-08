@@ -1,30 +1,30 @@
 #level 2 problems
 
-# Find 33
+# Q1 Find 33
 
 def has_33(lis):
     count=0
     
     for item in lis:
         if item==3:
-            count+=1
+            count++
         else:
             count=0
         if count==2:
             return True
     return False
 
-# paper doll
+# Q2 paper doll
 
 def paper_doll(st):
-    ans=''
+    ans=""
     
     for i in range(len(st)):
         for k in range(1,4):
-            ans+=st[i]
+            ans=ans+st[i]
     return ans
 
-# Black Jack
+# Q3 Black Jack
 
 def blackjack(a,b,c):
     summ=a+b+c
@@ -37,12 +37,13 @@ def blackjack(a,b,c):
     else:
         return a+b+c-10
 
-# Summer of '69
+# Q4 Summer of '69
 
 def summer_69(arr):
     flag=False
     summ=0
-    
+    temp_var=20
+
     for item in arr:
         if item==6:
             flag=True
