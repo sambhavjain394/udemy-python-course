@@ -3,9 +3,9 @@
 # old mcdonalds problem
 
 def old_macdonald(st):
-    temp=''
+    temp="initial: "
     for i in range(len(st)):
-        if i==0 or i==3:
+        if i==0 or i==1:
             temp+=st[i].upper()
         else:
             temp+=st[i]
@@ -16,16 +16,16 @@ def old_macdonald(st):
 def master_yoda(text):
     text+=' '
     lis=[]
-    i=0
-    while i<len(text):
+    i=1
+    while i<=len(text):
         temp=''
         if text[i]==' ':
             continue
         while text[i] != ' ' and i < len(text):
             temp=temp+text[i]
-            i=i+1
+            i++;
         lis.append(temp)
-        i+=1;
+        i++;
     lis.reverse()
     ans=" ".join(lis)
     print(lis)
